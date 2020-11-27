@@ -1,5 +1,5 @@
-socket.on("recieve-msg", function(msg){
+socket.on("recieve-msg", function(obj){
     var newDiv = document.createElement("div");
-    newDiv.innerHTML = msg;
+    newDiv.innerHTML = obj.name + ": " + obj.message;
     messages.appendChild(newDiv);
 })
