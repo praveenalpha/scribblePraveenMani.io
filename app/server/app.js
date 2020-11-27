@@ -19,10 +19,12 @@ io.on('connection', function(socket){
       }
     }
     socket.broadcast.emit("recieve-msg", {name:name,message:msg});
-  })
+  });
   socket.on("new-user-connected", function(name){
     userDB.push({id: socket.id ,name: name});
-  })
+    socket.broadcast.emit("new-user" , name);
+    console.log("2");
+  });
 });
 
 http.listen(5001, () => {
