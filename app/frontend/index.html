@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        
+        
+        scribblePraveenMani</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="back-screen">
+        <div class="tittle">
+            <h1>🔉  <span style = "color: red">s</span>
+                <span style = "color: blue">c</span>
+                <span style = "color: green">r</span>
+                <span style = "color: yellow">i</span>
+                <span style = "color: orange">b</span>
+                <span style = "color: saddlebrown">b</span>
+                <span style = "color: salmon">l</span>
+                <span style = "color: ghostwhite">e</span>
+                <span style = "color: violet">P</span>
+                <span style = "color: darkblue">r</span>
+                <span style = "color: rebeccapurple">a</span>
+                <span style = "color: goldenrod">v</span>
+                <span style = "color: burlywood">e</span>
+                <span style = "color: aqua">e</span>
+                <span style = "color: khaki">n</span>
+                <span style = "color: yellowgreen">M</span>
+                <span style = "color: gray">a</span>
+                <span style = "color: gold">n</span>
+                <span style = "color: rebeccapurple">i</span>
+                <span style = "color: darkorange">.</span>
+                <span style = "color: darkcyan">i</span>
+                <span style = "color: darkgreen">o</span>
+            </h1>
+                
+        </div>
+        
+        
+        <div class="header">
+            <div class="round-details">Round 1 of 3</div>
+            <div class="word">---- ----</div>
+        </div>
+        <div class="playground">
+            <div class="players">
+                <div class="player1">player1</div>
+                <div class="player2">player2</div>
+                <div class="player3">player3</div>
+                <div class="player4">player4</div>
+                <div class="player5">player5</div>
+                <div class="player6">player6</div>
+                
+            </div>
+            <div class="canvas">Canvas</div>
+            <div class="chat-box">chatbox
+                <div class="messages">
+                    <div class="one-msg">
+                        you: hi guysssss!!!!
+                    </div>
+                    
+                </div>
+                <div class="input">
+                    
+                    <div class="text">
+                        <input type="text" class = "text-area">
+                    </div>
+                    <div class="send">
+                        <button class = "send-btn">send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js" integrity="sha512-AcZyhRP/tbAEsXCCGlziPun5iFvcSUpEz2jKkx0blkYKbxU81F+iq8FURwPn1sYFeksJ+sDDrI5XujsqSobWdQ==" crossorigin="anonymous"></script>
+    <script>
+        const socket = io.connect("http://localhost:5001");
+    </script>
+    <script src="./script.js"></script>
+    <script src="./socket.js"></script>
+</body>
+</html>

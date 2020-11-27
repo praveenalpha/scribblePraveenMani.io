@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+ }
+  
+.back-screen{
+    background-image: url(https://media.istockphoto.com/photos/blue-abstract-background-or-texture-picture-id1138395421?k=6&m=1138395421&s=612x612&w=0&h=bJ1SRWujCgg3QWzkGPgaRiArNYohPl7-Wc4p_Fa_cyA=);
+    height: 100%;
+}
+.tittle{
+    font-family: 'Nerko One', cursive;
+    font-size: large;
+    
+    display: flex;
+    height: 50px;
+}
+.header{
+    display: flex;
+    margin-left: 60px;
+    justify-content: space-between;
+    background-color: blueviolet;
+    width: 1400px;
+    height: 50px;
+}
+.playground{
+    display: flex;
+    margin-top: 5px;
+}
+.players{
+    background-color: brown;
+    margin-left: 60px;
+    width: 170px;
+    height: 150px;
+}
+.canvas{
+    height: 633px;
+    width: 880px;
+    margin-left: 5px;
+    background-color: burlywood;
+}
+.chat-box{
+    background-color: chocolate;
+    margin-left: 5px;
+    width: 338px;
+    height: 633px;
+}
+.messages{
+    height: 599px;
+    background-color: #f0f0f0;
+    overflow: auto;
+}
+.input{
+    display: flex;
+    background-color: cyan;
+    height: 21px;
+}
+.text{
+    background-color: darkmagenta;
+    width: 100%;
+    
+}
+.text-area{
+    width: 100%;
+}
+.send-btn{
+    border-radius: 10px;
+    
+}
