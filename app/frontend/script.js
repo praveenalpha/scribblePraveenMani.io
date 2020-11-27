@@ -9,5 +9,6 @@ sendBtn.addEventListener("click", ()=>{
         newDiv.innerHTML = msg;
         messages.appendChild(newDiv);
         msgInput.value = "";
+        socket.emit("message-send", msg);
     }
 })

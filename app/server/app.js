@@ -9,6 +9,9 @@ const io = require('socket.io')(http); // enables socket.io
 //when a socket is created(when someone opens a new live server) , it connects to app.js
 io.on('connection', function(socket){
   console.log(`${socket.id} a user connected`);
+  socket.on("message-send", function(msg){
+    socket.broadcast.emit("recieve-msg", msg);
+  })
 });
 
 http.listen(5001, () => {
